@@ -1,0 +1,17 @@
+{
+    "type": "postgres",
+    "port": 5432,
+    "host": "localhost",
+    "username": "user",
+    "password": "user123",
+    "database": "database_restaurant",
+    "migrations": [
+        "./src/database/migrations/*.ts"
+    ],
+    "cli": {
+        "migrationsDir": "./src/database/migrations"
+    },
+    "entities": [
+        "./src/modules/**/entities/*.ts"
+    ]
+}
